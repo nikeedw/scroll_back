@@ -1,7 +1,7 @@
 .content {
 	width: 600px;
 	height: 200px;
-	position: absolute;
+	position: relative;
 	left: 175px;
 	top: 70px;
 	padding: 10px;

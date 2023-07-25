@@ -35,3 +35,20 @@
 	background-color: gray;
 	margin-left: 40px;
 }
+.left-scroll {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	width: 80px;
+	padding-top: 10px;
+	color: rgba(200,200,200,.4);
+	font-size: 12px;
+	cursor: pointer;
+	transition: all 0.25s linear;
+}
+.left-scroll:hover {
+	background-color: rgba(0, 0, 0, .5);
+	color: lavenderblush;
+}

@@ -7,3 +7,7 @@ body {
 	font-family: 'Roboto Slab', monospace;
 	padding-bottom: 2000px;
 }
+.main {
+	margin-inline: 160px;
+	padding-inline: 15px;
+}
