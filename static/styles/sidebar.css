@@ -1,0 +1,37 @@
+.sidebar {
+	position: absolute;
+	top: 70px;
+	display: flex;
+	flex-direction: column;
+	width: 165px;
+	color: white;
+	font-size: 12px;
+	padding: 5px;
+}
+.sidebar div:not([class="underline"]) {
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+	padding: 4px 8px;
+}
+.sidebar div svg {
+	margin-right: 10px;
+	color: lavender;
+}
+.sidebar div:not([class="underline"]):hover {
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 4px;
+}
+.sidebar div:nth-child(13),
+.sidebar div:nth-child(16){
+	margin-bottom: 10px;
+}
+.sidebar div:nth-child(15),
+.sidebar div:nth-child(18){
+	margin-top: 10px;
+}
+.sidebar .underline {
+	height: 1px;
+	background-color: gray;
+	margin-left: 40px;
+}

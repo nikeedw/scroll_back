@@ -1,0 +1,78 @@
+.content {
+	width: 600px;
+	height: 200px;
+	position: absolute;
+	left: 175px;
+	top: 70px;
+	padding: 10px;
+}
+.your-news {
+	background-color: rgb(46, 46, 46);
+	border: 1px solid rgb(96, 95, 95);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 6px inset rgba(0, 0, 0, .15);
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	padding-inline: 20px;
+}
+.your-news img {
+	border-radius: 50%;
+	height: 35px;
+	cursor: pointer;
+}
+.input-news {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10px;
+	align-items: center
+}
+.input-news input {
+	flex: 1;
+	background-color: transparent;
+	border: none;
+	font-family: 'Roboto Slab', monospace;
+}
+.input-news input::placeholder {
+	color: rgb(150, 150, 150);
+}
+.input-news input:focus {
+	outline: none;
+	color:  white;
+}
+.news-btn {
+	display: flex;
+	align-items: center;
+}
+.news-btn button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	color: rgb(150, 150, 150);
+	margin-right: 10px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+.tooltip {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 4px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+	white-space: wrap;
+}
+.news-btn button:hover {
+  color: white;
+}
+.news-btn button:hover .tooltip {
+  opacity: 1;
+}
