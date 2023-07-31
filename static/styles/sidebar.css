@@ -1,9 +1,8 @@
 .sidebar {
-	position: absolute;
-	top: 70px;
 	display: flex;
 	flex-direction: column;
-	width: 165px;
+	box-sizing: border-box;
+	min-width: 165px;
 	color: white;
 	font-size: 12px;
 	padding: 5px;

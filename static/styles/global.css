@@ -5,9 +5,6 @@
 body {
 	background-color: rgb(25, 25, 25);
 	font-family: Arial;
-	padding-bottom: 2000px;
-}
-.main {
-	margin-inline: 160px;
-	padding-inline: 15px;
+	padding-bottom: 3000px;
+	overflow-x: hidden;
 }

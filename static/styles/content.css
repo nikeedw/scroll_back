@@ -1,9 +1,19 @@
+.content-border {
+	display: flex;
+	position: absolute;
+	top: 60px;
+}
+.main_list {
+	min-width: 1106px;
+	display: flex;;
+	flex-shrink: 0;
+}
+.left-border,
+.right-border {
+	flex: 1;
+	flex-shrink: 1;
+}
 .content {
-	width: 600px;
-	height: 200px;
-	position: relative;
-	left: 175px;
-	top: 70px;
 	padding: 10px;
 }
 .your-news {

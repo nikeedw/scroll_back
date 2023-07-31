@@ -8,6 +8,7 @@ function setScrollBack() {
 	});
 };
 
+const borderScroll = document.querySelector('.left-border'); 
 const sideScroll = document.createElement('div');
 sideScroll.classList.add('left-scroll');
 
@@ -30,7 +31,16 @@ function handleScroll() {
 				behavior: "instant"
 			})
 		}, {once: true})
+	};
+
+	let borwserWidth = document.documentElement.clientWidth;
+	document.querySelector('.content-border').style.width = `${borwserWidth}px`;
+	document.querySelector('.navigation-gox').style.width = `${borwserWidth}px`
+
+	if(borderScroll.clientWidth < sideScroll.clientWidth) {
+		document.body.removeChild(sideScroll);
 	}
 };
 
 window.addEventListener("scroll", handleScroll);
+window.addEventListener("resize", handleScroll);

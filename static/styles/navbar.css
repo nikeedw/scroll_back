@@ -1,35 +1,47 @@
-.navbar {
+.navigation-box {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	background: linear-gradient(145deg, rgb(50, 50, 80), rgb(20, 20, 20));
-	display: flex;
 	height: 60px;
+	z-index: 100;
+	display: flex;
+	margin-bottom: 20px;
+	border-bottom: 1px solid black;
+}
+.left-nav-section,
+.right-nav-section {
+	flex: 1;
+	flex-shrink: 1;
+}
+.navbar {
+	display: flex;
+	min-width: 1106px;
+	flex-shrink: 0;
 	justify-content: space-between;
 	align-items: center;
-	padding-inline: 180px;
-	margin-bottom: 20px;
-	z-index: 100;
-	border-bottom: 1px solid black;
 }
 .left-section {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
+	min-width: 165px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.left-section button {
 	font-weight: bold;
 	background: linear-gradient(145deg, rgb(35, 35, 35), black);
-	padding: 10px 30px;
-	box-sizing: border-box;
-	width: 140px;
-	margin-right: 25px;
+	border: none;
+	padding: 14px 30px;
 	border-radius: 4px;
 	color: whitesmoke;
 	font-family: 'Roboto Slab', monospace;
 	cursor: pointer;
 	transition: all 0.35s ease;
 }
-.left-section:hover {
+.left-section button:hover {
 	background: linear-gradient(145deg, cornflowerblue, lightblue);
 	color: black;
 }
@@ -38,7 +50,7 @@
 	align-items: center;
 	flex: 1;
 	min-width: 400px;
-	margin-left: 15px;
+	margin-left: 10px;
 }
 .search {
 	padding: 10px 18px;
@@ -54,6 +66,7 @@
 }
 .search:focus {
 	outline: none;
+	color: rgb(215, 215, 255);
 }
 .search:focus::placeholder {
 	color: transparent;
