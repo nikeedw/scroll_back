@@ -33,7 +33,7 @@
 	flex: 1;
 	background-color: transparent;
 	border: none;
-	font-family: 'Roboto Slab', monospace;
+	font-family: Arial;
 }
 .input-news input::placeholder {
 	color: rgb(150, 150, 150);
