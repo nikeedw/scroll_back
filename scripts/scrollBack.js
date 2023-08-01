@@ -13,7 +13,7 @@ const sideScroll = document.createElement('div');
 sideScroll.classList.add('left-scroll');
 
 function handleScroll() {
-  const scrolledPixels = document.documentElement.scrollTop || document.body.scrollTop;
+	const scrolledPixels = document.documentElement.scrollTop || document.body.scrollTop;
   if (scrolledPixels >= 200) {
 		sideScroll.innerHTML = 'Наверх';
     document.body.insertAdjacentElement(
@@ -32,10 +32,6 @@ function handleScroll() {
 			})
 		}, {once: true})
 	};
-
-	let borwserWidth = document.documentElement.clientWidth;
-	document.querySelector('.content-border').style.width = `${borwserWidth}px`;
-	document.querySelector('.navigation-gox').style.width = `${borwserWidth}px`
 
 	if(borderScroll.clientWidth < sideScroll.clientWidth) {
 		document.body.removeChild(sideScroll);
